@@ -17,7 +17,15 @@
 	<link rel="stylesheet" type="text/css" href="css/breaking-news-ticker.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+    -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!---->
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -104,22 +112,160 @@ body {
 </div> -->
 
 <!---->
-<br>
-<br>
-<section class="demo-section-box container" style="background-color: #f2f2f0;margin-top: 50px">
+
+<!-- <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="text-align: center">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+  </div>
+</nav> -->
+<!-- <div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+</div> -->
+
+<!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum repellat fugit vero. Officiis, reprehenderit quaerat. Nesciunt officiis quo facere quae delectus! Perferendis reprehenderit porro eligendi enim? Eaque, numquam laborum?</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, sed. Optio delectus repudiandae eos, neque odit quibusdam voluptatum aperiam. Alias cumque aperiam laudantium aspernatur corporis perferendis tempora quidem autem porr jhdsufhjfjjkhjjkghjhgfjgjgjjghjkgf</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quam incidunt ab fugiat nemo illum odit vel est porro quasi, omnis doloremque in quidem dolore provident numquam nihil rerum, itaque, exercitationem iste atque excepturi saepe consectetur dolor? Numquam repellat sapiente inventore, quo minus molestiae quae corporis, quasi, sint cupiditate facere.</div>
+</div> -->
+<div class="container-fluid">
+  <!-- <h2>Toggleable Tabs</h2> -->
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified" role="tablist" >
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#delayedwork">Delayed Work</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#existingwork">Existing Work</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#completedwork">Completed Work</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="delayedwork" class="container tab-pane active">
+      <br>
+      <div class="container-fluid">
+        <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small>Donec id elit non mi porta.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+      </div>
+      </div>
+    </div>
+    <div id="existingwork" class="container tab-pane fade"><br>
+      <div class="container-fluid">
+          <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small>Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+        </div>
+        </div>
+    </div>
+    <div id="completedwork" class="container tab-pane fade"><br>
+      <div class="container-fluid">
+          <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small>Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- <section class="demo-section-box container" style="background-color: #f2f2f0;margin-top: 50px">
 		<div class="section-container">
 			<div class="x_panel">
 					<div class="x_title">
 							<h2 style="text-align: center">Updates</h2>
-							<!-- <div class="clearfix"></div> -->
+							 <div class="clearfix"></div> 
 						  </div>
 			
 			<div class="demo-box">
 
-				<!-- DEMO11 HTML STARTS HERE -->
-				<!-- *********************** -->
+				
 				<div class="breaking-news-ticker" id="newsTicker11" style=" padding: 50px;height: fit-content;">
-			    	<!-- <div class="bn-label">SLIDE UP</div> -->
+			    	<div class="bn-label">SLIDE UP</div>
 			    	<div class="bn-news">
 			    		<ul>
 							<li><a href="#">1.1. There many variations of passages of Lorem Ipsum available <br>
@@ -144,7 +290,7 @@ body {
 			</div>
 		</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -165,7 +311,7 @@ function closeNav() {
 
 
 </script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/breaking-news-ticker.min.js"></script>
 
 
@@ -181,7 +327,7 @@ function closeNav() {
     
   });
 
-</script>
+</script> -->
    
 </body>
 </html> 
